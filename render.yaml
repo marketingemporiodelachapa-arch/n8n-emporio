@@ -7,6 +7,12 @@ services:
       url: docker.io/n8nio/n8n:latest
     envVars:
       - key: N8N_HOST
-        value: 0.0.0.0
+        value: n8n-vgwo.onrender.com
+      - key: N8N_PROTOCOL
+        value: https
+      - key: WEBHOOK_URL
+        value: https://n8n-vgwo.onrender.com
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-vgwo.onrender.com
       - key: N8N_PORT
         value: "5678"
